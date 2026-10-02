@@ -18,8 +18,18 @@ jobs:
         distribution: 'temurin'
         java-version: '17'
 
-    - name: Build with Apktool or Gradle
+    - name: Install Apktool
       run: |
-        echo "Running build orchestration..."
-        ls -la
+        sudo apt-get update
+        sudo apt-get install -y apktool
+
+    - name: Build APK with Apktool
+      run: |
+        apktool b . -o dist/app-release.apk
+
+    - name: Upload Built APK
+      uses: actions/upload-artifact@v3
+      with:
+        name: Ninja-Engine-Sen-Fixed
+        path: dist/app-release.apk
 
