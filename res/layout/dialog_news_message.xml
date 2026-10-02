@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/bg_gradient_dark" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="start|top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:text="@string/nav_news" android:layout_marginStart="24.0dp" />
+    <ImageView android:layout_gravity="end|top" android:id="@id/news_detail_close" android:background="@drawable/bg_icon_button" android:padding="9.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="20.0dp" android:src="@drawable/ic_close" android:contentDescription="@string/close_dialog" android:layout_marginEnd="20.0dp" />
+    <ScrollView android:paddingTop="4.0dp" android:paddingBottom="36.0dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="74.0dp" android:fillViewport="true" android:overScrollMode="never" android:paddingStart="24.0dp" android:paddingEnd="24.0dp">
+        <TextView android:textSize="16.0sp" android:textColor="#ffe8e9f5" android:id="@id/news_detail_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingExtra="5.0dp" />
+    </ScrollView>
+</FrameLayout>

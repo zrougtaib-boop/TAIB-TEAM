@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog_glass" android:padding="24.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:background="@drawable/bg_tile_icon" android:padding="12.0dp" android:layout_width="48.0dp" android:layout_height="48.0dp" android:layout_marginTop="4.0dp" android:src="@drawable/ic_notifications" android:tint="#ffd6cfff" android:contentDescription="@string/status_title" />
+        <TextView android:textSize="19.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dp" android:text="@string/status_title" />
+        <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dp" android:overScrollMode="never">
+            <TextView android:textSize="15.0sp" android:textColor="#ffd8d9ec" android:gravity="start" android:id="@id/status_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:lineSpacingExtra="4.0dp" />
+        </ScrollView>
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/status_ok" android:background="@drawable/bg_cta_gradient" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="52.0dp" android:layout_marginTop="22.0dp" android:text="@string/close_dialog" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="end|top" android:id="@id/status_close" android:padding="9.0dp" android:layout_width="38.0dp" android:layout_height="38.0dp" android:layout_marginTop="10.0dp" android:src="@drawable/ic_close" android:tint="#ffb9b4e0" android:contentDescription="@string/close_dialog" android:layout_marginEnd="10.0dp" />
+</FrameLayout>

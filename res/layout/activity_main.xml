@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/bg_dark_primary" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <FrameLayout android:layout_gravity="bottom" android:paddingTop="46.0dp" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.ninja.engine.view.widgets.ArchNavView android:layout_gravity="bottom" android:id="@id/nav_arch" android:layout_width="match_parent" android:layout_height="90.0dp" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/nav_bar" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="64.0dp" android:weightSum="5.0">
+            <FrameLayout android:id="@id/nav_cell_account" android:background="?selectableItemBackgroundBorderless" android:focusable="true" android:clickable="true" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/nav_ic_account" android:layout_width="23.0dp" android:layout_height="23.0dp" android:src="@drawable/ic_nav_account" android:tint="@color/text_hint" android:contentDescription="@string/nav_account" />
+                    <TextView android:textSize="10.5sp" android:textColor="@color/text_hint" android:id="@id/nav_tx_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/nav_account" />
+                </LinearLayout>
+                <View android:layout_gravity="center|bottom" android:id="@id/nav_dot_account" android:background="@drawable/bg_nav_dot" android:visibility="invisible" android:layout_width="5.0dp" android:layout_height="5.0dp" android:layout_marginBottom="6.0dp" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/nav_cell_news" android:background="?selectableItemBackgroundBorderless" android:focusable="true" android:clickable="true" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp">
+                    <ImageView android:id="@id/nav_ic_news" android:layout_width="23.0dp" android:layout_height="23.0dp" android:src="@drawable/ic_nav_news" android:tint="@color/text_hint" android:contentDescription="@string/nav_news" />
+                    <TextView android:textSize="10.5sp" android:textColor="@color/text_hint" android:id="@id/nav_tx_news" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/nav_news" />
+                </LinearLayout>
+                <View android:layout_gravity="center|bottom" android:id="@id/nav_dot_news" android:background="@drawable/bg_nav_dot" android:visibility="invisible" android:layout_width="5.0dp" android:layout_height="5.0dp" android:layout_marginBottom="6.0dp" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/nav_cell_home" android:focusable="true" android:clickable="true" android:clipChildren="false" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <View android:layout_gravity="center|top" android:id="@id/nav_home_glow" android:background="@drawable/bg_nav_home_glow" android:layout_width="84.0dp" android:layout_height="84.0dp" android:layout_marginTop="-46.0dp" />
+                <FrameLayout android:layout_gravity="center|top" android:id="@id/nav_home_key" android:layout_width="56.0dp" android:layout_height="56.0dp" android:layout_marginTop="-34.0dp">
+                    <ImageView android:id="@id/nav_ic_home" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/home" android:scaleType="fitCenter" android:contentDescription="@string/nav_home" />
+                </FrameLayout>
+                <TextView android:textSize="10.5sp" android:textColor="@color/accent_purple_light" android:layout_gravity="center|bottom" android:id="@id/nav_tx_home" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="14.0dp" android:text="@string/nav_home" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/nav_cell_store" android:background="?selectableItemBackgroundBorderless" android:focusable="true" android:clickable="true" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp">
+                    <ImageView android:id="@id/nav_ic_store" android:layout_width="23.0dp" android:layout_height="23.0dp" android:src="@drawable/ic_nav_resellers" android:tint="@color/text_hint" android:contentDescription="@string/nav_store" />
+                    <TextView android:textSize="10.5sp" android:textColor="@color/text_hint" android:id="@id/nav_tx_store" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/nav_store" />
+                </LinearLayout>
+                <View android:layout_gravity="center|bottom" android:id="@id/nav_dot_store" android:background="@drawable/bg_nav_dot" android:visibility="invisible" android:layout_width="5.0dp" android:layout_height="5.0dp" android:layout_marginBottom="6.0dp" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/nav_cell_settings" android:background="?selectableItemBackgroundBorderless" android:focusable="true" android:clickable="true" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/nav_ic_settings" android:layout_width="23.0dp" android:layout_height="23.0dp" android:src="@drawable/ic_nav_settings" android:tint="@color/text_hint" android:contentDescription="@string/nav_settings" />
+                    <TextView android:textSize="10.5sp" android:textColor="@color/text_hint" android:id="@id/nav_tx_settings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:text="@string/nav_settings" />
+                </LinearLayout>
+                <View android:layout_gravity="center|bottom" android:id="@id/nav_dot_settings" android:background="@drawable/bg_nav_dot" android:visibility="invisible" android:layout_width="5.0dp" android:layout_height="5.0dp" android:layout_marginBottom="6.0dp" />
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_glass_card" android:paddingTop="16.0dp" android:paddingBottom="16.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" android:paddingStart="16.0dp" android:paddingEnd="18.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/bg_news_accent" android:layout_width="3.0dp" android:layout_height="match_parent" android:minHeight="24.0dp" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffe8e9f5" android:ellipsize="end" android:id="@id/news_message_body" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="3" android:lineSpacingExtra="3.0dp" android:layout_marginStart="14.0dp" />
+</LinearLayout>

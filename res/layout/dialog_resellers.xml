@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_reseller_card" android:padding="20.0dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/resellers_list_title" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/text_hint" android:gravity="center" android:id="@id/tv_loading" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:text="@string/loading_resellers" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/text_hint" android:gravity="center" android:id="@id/tv_empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:text="@string/no_resellers" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_resellers" android:visibility="gone" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_marginTop="12.0dp" android:layout_weight="1.0" android:overScrollMode="never" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/text_hint" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dp" android:text="@string/resellers_warning" android:lineSpacingExtra="4.0dp" />
+    <Button android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/btn_close_dialog" android:background="@drawable/bg_button_gradient" android:layout_width="match_parent" android:layout_height="40.0dp" android:layout_marginTop="16.0dp" android:text="@string/close_dialog" android:textAllCaps="false" android:stateListAnimator="@null" />
+</LinearLayout>

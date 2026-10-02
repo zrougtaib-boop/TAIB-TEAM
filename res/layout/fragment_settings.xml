@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@drawable/bg_gradient_dark" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingTop="14.0dp" android:paddingBottom="112.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="20.0dp" android:paddingEnd="20.0dp">
+        <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/settings_title" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp" android:layout_marginBottom="20.0dp" android:text="@string/settings_subtitle" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_glass_card" android:paddingTop="22.0dp" android:paddingBottom="22.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="22.0dp" android:paddingStart="18.0dp" android:paddingEnd="18.0dp">
+            <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@color/accent_purple_light" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/subscription_expires_in" android:textAllCaps="true" android:letterSpacing="0.14" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dp">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/bg_timer_digit" android:paddingTop="13.0dp" android:paddingBottom="13.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="26.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/textview_days" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00" android:fontFeatureSettings="tnum" />
+                    <TextView android:textSize="9.5sp" android:textColor="@color/text_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:text="@string/timer_days" android:textAllCaps="true" android:letterSpacing="0.12" />
+                </LinearLayout>
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/accent_purple_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=":" android:paddingStart="5.0dp" android:paddingEnd="5.0dp" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/bg_timer_digit" android:paddingTop="13.0dp" android:paddingBottom="13.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="26.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/textview_hours" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00" android:fontFeatureSettings="tnum" />
+                    <TextView android:textSize="9.5sp" android:textColor="@color/text_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:text="@string/timer_hours" android:textAllCaps="true" android:letterSpacing="0.12" />
+                </LinearLayout>
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/accent_purple_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=":" android:paddingStart="5.0dp" android:paddingEnd="5.0dp" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/bg_timer_digit" android:paddingTop="13.0dp" android:paddingBottom="13.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="26.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/textview_minutes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00" android:fontFeatureSettings="tnum" />
+                    <TextView android:textSize="9.5sp" android:textColor="@color/text_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:text="@string/timer_minutes" android:textAllCaps="true" android:letterSpacing="0.12" />
+                </LinearLayout>
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/accent_purple_light" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=":" android:paddingStart="5.0dp" android:paddingEnd="5.0dp" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/bg_timer_digit" android:paddingTop="13.0dp" android:paddingBottom="13.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="26.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/textview_seconds" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00" android:fontFeatureSettings="tnum" />
+                    <TextView android:textSize="9.5sp" android:textColor="@color/text_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dp" android:text="@string/timer_seconds" android:textAllCaps="true" android:letterSpacing="0.12" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" android:text="@string/language_label" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/settings_language_row" android:background="@drawable/bg_glass_card" android:paddingTop="14.0dp" android:paddingBottom="14.0dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="22.0dp" android:foreground="?selectableItemBackground" android:paddingStart="14.0dp" android:paddingEnd="16.0dp">
+            <FrameLayout android:layout_width="40.0dp" android:layout_height="40.0dp">
+                <View android:background="@drawable/bg_tile_icon" android:layout_width="match_parent" android:layout_height="match_parent" />
+                <ImageView android:layout_gravity="center" android:layout_width="22.0dp" android:layout_height="22.0dp" android:src="@drawable/ic_language" android:tint="#ffd6cfff" android:contentDescription="@string/language_label" />
+            </FrameLayout>
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/settings_language_value" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="English" android:layout_weight="1.0" android:layout_marginStart="13.0dp" />
+            <ImageView android:layout_width="20.0dp" android:layout_height="20.0dp" android:src="@drawable/ic_chevron_right" android:contentDescription="@string/cd_expand" />
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="12.0dp" android:text="@string/account_label" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/bg_glass_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="16.0dp" android:paddingEnd="16.0dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="15.0dp" android:paddingBottom="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="@color/text_subtitle" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/username_label" android:layout_weight="1.0" />
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:id="@id/settings_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="—" android:maxLines="1" />
+            </LinearLayout>
+            <View android:background="#1affffff" android:layout_width="match_parent" android:layout_height="1.0dp" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="15.0dp" android:paddingBottom="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="@color/text_subtitle" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/version_label" android:layout_weight="1.0" />
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/settings_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/version_name" />
+                <TextView android:textSize="13.0sp" android:textColor="@color/text_hint" android:id="@id/settings_build" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/version_code" android:layout_marginStart="6.0dp" />
+            </LinearLayout>
+            <View android:background="#1affffff" android:layout_width="match_parent" android:layout_height="1.0dp" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingTop="15.0dp" android:paddingBottom="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="@color/text_subtitle" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/status_label" android:layout_weight="1.0" />
+                <TextView android:textSize="11.5sp" android:textStyle="bold" android:textColor="#ff3de29b" android:id="@id/settings_status" android:background="@drawable/bg_chip_good" android:paddingTop="3.0dp" android:paddingBottom="3.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/status_active" android:textAllCaps="true" android:paddingStart="10.0dp" android:paddingEnd="10.0dp" android:letterSpacing="0.04" />
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ffff5d6c" android:id="@id/btn_logout" android:background="@drawable/bg_logout_button" android:layout_width="match_parent" android:layout_height="52.0dp" android:layout_marginTop="18.0dp" android:text="@string/logout" android:textAllCaps="false" android:stateListAnimator="@null" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/text_hint" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dp" android:text="@string/copyright" />
+    </LinearLayout>
+</ScrollView>

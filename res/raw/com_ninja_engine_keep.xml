@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@string/com_facebook_*,@layout/com_facebook_*,@drawable/com_facebook_*,@color/com_facebook_*,@dimen/com_facebook_*,@id/com_facebook_*,@style/com_facebook_*" />

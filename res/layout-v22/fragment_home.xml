@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@drawable/bg_gradient_dark" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="14.0dp" android:paddingBottom="120.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="20.0dp" android:paddingEnd="20.0dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dp" android:layout_marginBottom="20.0dp">
+            <FrameLayout android:layout_width="48.0dp" android:layout_height="48.0dp">
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/avatar_letter" android:background="@drawable/bg_avatar_square" android:layout_width="48.0dp" android:layout_height="48.0dp" android:text="N" />
+                <View android:layout_gravity="end|bottom" android:background="@drawable/bg_online_dot" android:layout_width="14.0dp" android:layout_height="14.0dp" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="13.0dp">
+                <TextView android:textSize="12.5sp" android:textColor="@color/text_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_welcome_back" />
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:id="@id/greeting_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:maxLines="1" />
+            </LinearLayout>
+            <FrameLayout android:id="@id/home_notif" android:background="@drawable/bg_icon_button" android:layout_width="44.0dp" android:layout_height="44.0dp">
+                <ImageView android:layout_gravity="center" android:layout_width="22.0dp" android:layout_height="22.0dp" android:src="@drawable/ic_notifications" android:contentDescription="@string/cd_notifications" />
+                <View android:layout_gravity="end|top" android:id="@id/home_notif_dot" android:background="@drawable/bg_notif_dot" android:visibility="gone" android:layout_width="8.0dp" android:layout_height="8.0dp" android:layout_marginTop="10.0dp" android:layout_marginEnd="11.0dp" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_glass_card" android:paddingTop="15.0dp" android:paddingBottom="15.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="22.0dp" android:paddingStart="17.0dp" android:paddingEnd="15.0dp">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:textSize="11.0sp" android:textColor="@color/text_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_subscription" android:letterSpacing="0.06" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dp">
+                    <View android:background="@drawable/bg_dot_cyan" android:layout_width="8.0dp" android:layout_height="8.0dp" android:layout_marginEnd="7.0dp" />
+                    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:id="@id/sub_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home_sub_active" android:maxLines="1" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/bg_sub_clock_cell" android:paddingTop="7.0dp" android:paddingBottom="7.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="42.0dp" android:paddingStart="4.0dp" android:paddingEnd="4.0dp">
+                    <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/home_days" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="—" android:fontFeatureSettings="tnum" />
+                    <TextView android:textSize="9.0sp" android:textColor="@color/text_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/home_unit_days" android:textAllCaps="true" android:letterSpacing="0.08" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/bg_sub_clock_cell" android:paddingTop="7.0dp" android:paddingBottom="7.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="42.0dp" android:paddingStart="4.0dp" android:paddingEnd="4.0dp" android:layout_marginStart="6.0dp">
+                    <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/home_hours" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="—" android:fontFeatureSettings="tnum" />
+                    <TextView android:textSize="9.0sp" android:textColor="@color/text_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/home_unit_hours" android:textAllCaps="true" android:letterSpacing="0.08" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/bg_sub_clock_cell" android:paddingTop="7.0dp" android:paddingBottom="7.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="42.0dp" android:paddingStart="4.0dp" android:paddingEnd="4.0dp" android:layout_marginStart="6.0dp">
+                    <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/home_minutes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="—" android:fontFeatureSettings="tnum" />
+                    <TextView android:textSize="9.0sp" android:textColor="@color/text_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dp" android:text="@string/home_unit_minutes" android:textAllCaps="true" android:letterSpacing="0.08" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/hero_card" android:background="@drawable/bg_hero_card" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="84.0dp" android:clipToOutline="true">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="78.0dp" android:paddingBottom="22.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="22.0dp" android:paddingEnd="22.0dp">
+                    <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hero_title" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_verrow_pill" android:paddingTop="5.0dp" android:paddingBottom="5.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:paddingStart="13.0dp" android:paddingEnd="13.0dp">
+                        <View android:id="@id/versionDot" android:background="@drawable/bg_dot_good" android:layout_width="6.0dp" android:layout_height="6.0dp" android:layout_marginEnd="7.0dp" />
+                        <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="#ffc9c2ff" android:id="@id/versionBadge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="v—" />
+                    </LinearLayout>
+                    <TextView android:textSize="13.0sp" android:textColor="@color/text_subtitle" android:gravity="center" android:id="@id/statusText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/tap_below_to_start" />
+                    <Button android:textSize="16.5sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/launchButton" android:background="@drawable/bg_cta_gradient" android:layout_width="match_parent" android:layout_height="56.0dp" android:layout_marginTop="18.0dp" android:text="@string/launch_game" android:textAllCaps="false" android:stateListAnimator="@null" />
+                </LinearLayout>
+                <View android:id="@id/card_shine" android:background="@drawable/bg_shine_streak" android:focusable="false" android:clickable="false" android:layout_width="150.0dp" android:layout_height="match_parent" android:rotation="0.0" android:importantForAccessibility="no" />
+            </FrameLayout>
+            <FrameLayout android:layout_gravity="center|top" android:id="@id/orb_wrap" android:clipChildren="false" android:clipToPadding="false" android:layout_width="168.0dp" android:layout_height="168.0dp">
+                <View android:layout_gravity="center" android:id="@id/hero_glow" android:background="@drawable/bg_hero_glow" android:layout_width="168.0dp" android:layout_height="168.0dp" />
+                <com.ninja.engine.view.widgets.EnergyRingsView android:layout_gravity="center" android:id="@id/hero_rings" android:layout_width="168.0dp" android:layout_height="168.0dp" android:contentDescription="@string/cd_energy_ring" />
+                <ImageView android:layout_gravity="center" android:id="@id/appIcon" android:layout_width="116.0dp" android:layout_height="116.0dp" android:src="@drawable/home" android:scaleType="fitCenter" android:contentDescription="@string/hero_title" />
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

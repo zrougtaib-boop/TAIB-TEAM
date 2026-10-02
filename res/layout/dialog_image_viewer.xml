@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/image_viewer_root" android:background="#f0000000" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.viewpager2.widget.ViewPager2 android:id="@id/viewer_pager" android:layout_width="match_parent" android:layout_height="match_parent" />
+    <TextView android:textSize="13.0sp" android:textStyle="bold" android:textColor="#ffedecf5" android:layout_gravity="center|bottom" android:id="@id/viewer_counter" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="28.0dp" android:shadowColor="#ff000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="6.0" />
+    <ImageView android:layout_gravity="end|top" android:id="@id/full_close" android:background="@drawable/bg_icon_button" android:padding="9.0dp" android:layout_width="40.0dp" android:layout_height="40.0dp" android:layout_marginTop="16.0dp" android:src="@drawable/ic_close" android:contentDescription="@string/close_dialog" android:layout_marginEnd="16.0dp" />
+</FrameLayout>
